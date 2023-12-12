@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".AddRecipe">
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Add Recipe"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        android:layout_marginTop="2dp"/>
+
+    <ImageView
+        android:id="@+id/recipeSaveBtn"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/baseline_check_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <ImageView
+        android:id="@+id/backView"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+    <LinearLayout
+        android:layout_width="415dp"
+        android:layout_height="660dp"
+        android:background="@drawable/bottom_bg_login"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/recipeTitle"
+            android:layout_width="365dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_orange"
+            android:ems="10"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Recipe Title"
+            android:inputType="text"
+            android:padding="10dp"
+            tools:maxLines="1" />
+
+        <Spinner
+            android:id="@+id/recipeSpinnerCategory"
+            android:layout_width="365dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/recipeIngredients"
+            android:layout_height="100dp"
+            android:layout_width="365dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/border_orange"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Recipe Ingredients"
+            android:inputType="textMultiLine"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/recipeProcedure"
+            android:layout_width="365dp"
+            android:layout_gravity="center"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_orange"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Recipe Procedure"
+            android:inputType="textMultiLine"
+            android:padding="12dp" />
+
+        <!--<ImageView
+             android:id="@+id/recipeImageView"
+             android:layout_width="150dp"
+             android:layout_height="150dp"
+             android:layout_marginTop="10dp"
+             android:layout_gravity="center"
+             android:background="@drawable/baseline_local_florist_24"
+             android:contentDescription="Recipe Image"
+             app:layout_constraintTop_toBottomOf="@+id/recipeProcedure" />-->
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

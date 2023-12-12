@@ -1,0 +1,8 @@
+<resources>
+    <array name="categories">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Snack</item>
+    </array>
+</resources>
